@@ -1,0 +1,17 @@
+#include "binary_trees.h"
+
+/**
+ * binary_tree_preorder - use preorder travers to treaverse tree
+ * @tree: pointer to root node that is about to be traversed
+ * @func: function that print node value
+ */
+
+void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
+{
+if (tree == NULL || func == NULL)
+return;
+
+func(tree->n);
+binary_tree_preorder(tree->left, func);
+binary_tree_preorder(tree->right, func);
+}
