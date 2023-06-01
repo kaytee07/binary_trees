@@ -17,6 +17,5 @@ binary_tree_t *grandparent = parent->parent;
 
 if (grandparent->left == parent)
 return (grandparent->right);
-else
 return (grandparent->left);
 }
