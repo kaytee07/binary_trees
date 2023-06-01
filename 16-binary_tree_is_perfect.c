@@ -55,5 +55,5 @@ int full = binary_tree_full(tree);
 int right_height = (int) binary_tree_height(tree->right);
 
 int left_height = (int) binary_tree_height(tree->left);
-return (full == 1 && left_height == right_height ? 1 : 0);
+return ((full == 1) && (left_height == right_height) ? 1 : 0);
 }
