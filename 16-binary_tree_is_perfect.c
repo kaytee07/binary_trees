@@ -1,5 +1,6 @@
 #include "binary_trees.h"
 #include <stdio.h>
+
 /**
  * binary_tree_height - finds the height of the binary tree
  * @tree: pointer to the root node of the tree
@@ -50,13 +51,9 @@ if (tree == NULL)
 return (0);
 
 int full = binary_tree_full(tree);
-printf("%d--", full);
 
 int right_height = (int) binary_tree_height(tree->right);
-printf("%d--", right_height);
 
 int left_height = (int) binary_tree_height(tree->left);
-printf("%d--", left_height);
-
 return (full == 1 && left_height == right_height ? 1 : 0);
 }
