@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stdlib.h>
 
 /**
  * _sorted_array_to_avl - helper func for sorted_array_to_avl
