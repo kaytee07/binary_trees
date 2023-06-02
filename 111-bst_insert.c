@@ -22,9 +22,9 @@ return (*tree);
 
 binary_tree_t *current = *tree;
 
-while (true)
+while (1)
 {
-if (value < current->value)
+if (value < current->n)
 {
 if (current->left == NULL)
 {
@@ -33,7 +33,7 @@ return (current->left);
 }
 current = current->left;
 }
-else if (value > current->value)
+else if (value > current->n)
 {
 if (current->right == NULL)
 {
