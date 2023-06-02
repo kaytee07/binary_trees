@@ -1,4 +1,7 @@
 #include "binary_trees.h"
+#include <stdlib.h>
+#include <string.h>
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
 
 #define INIT_NODE {0, NULL, NULL, NULL}
 
