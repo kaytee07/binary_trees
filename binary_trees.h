@@ -18,6 +18,7 @@ struct binary_tree_s
     struct binary_tree_s *left;
     struct binary_tree_s *right;
 };
+#include <stddef.h>
 
 typedef struct binary_tree_s binary_tree_t;
 
